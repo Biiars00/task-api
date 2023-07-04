@@ -1,0 +1,23 @@
+{
+  "name": "teste-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "csv": "^6.3.1",
+    "csv-parse": "^5.4.0",
+    "express": "^4.18.2",
+    "mongoose": "^6.2.6"
+  }
+}
