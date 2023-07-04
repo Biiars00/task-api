@@ -78,12 +78,17 @@ const taskSchema = new mongoose.Schema({
 É possível importar dados do banco em arquivo *.csv* :
 
 ```javascript
+[trecho de código]
 export function importarArquivoCsv(req, res) {
-  fs.createReadStream("[texto removido]")
-    .pipe(parse())
-    .on("data", (data) => {
-      tasksList.push(data);
-    })
+  const csvImport = new URL('[trecho de código removido]');
+
+  const csv = fs.createReadStream(csvImport);
+
+  const csvParse = parse({
+    delimiter: ',',
+    skipEmptyLines: true,
+    fromLine: 2
+  });
 }
 ```
 
